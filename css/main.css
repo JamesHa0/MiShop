@@ -353,7 +353,7 @@
 
 /*******************section中隐藏层**********************/
 .wrapper-first section .banner .banner-ul li .banner-box {
-    width: 248px;
+    min-width: 248px;
     height: 460px;
     background-color: #fff;
     box-sizing: border-box;
@@ -370,15 +370,12 @@
     display: none;
 }
 
-.wrapper-first section .banner .banner-ul li:nth-child(1) .banner-box {
-    width: 992px;
-}
-
 .wrapper-first section .banner .banner-ul li .banner-box p {
     display: flex;
     align-items: center;
 
     width: 247px;
+    height: 115px;
     padding: 24px;
     box-sizing: border-box;
 
@@ -602,15 +599,15 @@
     align-items: center;
 }
 
-.wrapper-second section .running-horse .right ul li:nth-child(2) {
+.wrapper-second section .running-horse .right ul li:nth-child(4n+2) {
     border-top: solid 1px #00c0a5;
 }
 
-.wrapper-second section .running-horse .right ul li:nth-child(3) {
+.wrapper-second section .running-horse .right ul li:nth-child(4n+3) {
     border-top: solid 1px #ffac13;
 }
 
-.wrapper-second section .running-horse .right ul li:nth-child(4) {
+.wrapper-second section .running-horse .right ul li:nth-child(4n) {
     border-top: solid 1px #83c44e;
 }
 
