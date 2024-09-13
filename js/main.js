@@ -132,7 +132,7 @@ window.onload = function () {
     btnBoxLeft.style.color = "#e0e0e0";//初始化左按钮无效
 
     btnBoxRight.onclick = function () {
-        btnBoxLeft.style.color = "#b0b0b0";
+        btnBoxLeft.style.color = "#000";
         scrollIndex++;
         if (scrollIndex > 1) {
             scrollIndex = 2;
@@ -140,7 +140,7 @@ window.onload = function () {
         }
         let timer = setInterval(function () {
             left -= 60;
-            if (leftt <= scrollIndex * -978) {
+            if (left <= scrollIndex * -978) {
                 left = scrollIndex * -978;
                 clearInterval(timer);
             }
@@ -149,7 +149,7 @@ window.onload = function () {
     }
 
     btnBoxLeft.onclick = function () {
-        btnBoxRight.style.color = "#b0b0b0";
+        btnBoxRight.style.color = "#000";
         scrollIndex--;
         if (scrollIndex < 1) {
             scrollIndex = 0;
